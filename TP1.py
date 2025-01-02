@@ -29,13 +29,15 @@ def path_existence(g: dict, s:int, t:int) -> bool:
     if t in visited:
         return True
     return False
-result = path_existence({
-    1:[2],
-    2:[1,5],
-    3:[6],
-    4:[6,7],
-    5:[2],
-    6:[3,4,7],
-    7:[4,6],
-}, 2,6)
-print(result)
+
+if __name__ == '__main__':
+    tp1 = path_existence({
+        1: [2],
+        2: [1, 5],
+        3: [6],
+        4: [6, 7],
+        5: [2],
+        6: [3, 4, 7],
+        7: [4, 6],
+    }, 2, 6)
+    print(tp1)
